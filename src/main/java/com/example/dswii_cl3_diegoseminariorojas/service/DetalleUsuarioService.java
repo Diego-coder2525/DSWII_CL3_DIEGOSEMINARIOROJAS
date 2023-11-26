@@ -35,7 +35,7 @@ public class DetalleUsuarioService implements UserDetailsService {
         List<GrantedAuthority> grantedAuthorities = new ArrayList<>(roles);
         return grantedAuthorities;
     }
-    public Usuario findByNomUsuario(String usuario){
+    public Usuario findByNomusuario(String usuario){
         return usuarioRepository.findByNomusuario(usuario);
     }
     private UserDetails authUsuario(Usuario usuario, List<GrantedAuthority> authorityList){
